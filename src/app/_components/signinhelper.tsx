@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import { getServerAuthSession } from "~/server/auth";
 
-export default async function SignInHelper() {
+export async function SignInHelper() {
     const session = await getServerAuthSession();
   
     return (
